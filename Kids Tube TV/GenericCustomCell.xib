@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenericCustomCell" id="It0-0u-X2y" customClass="GenericCustomCell" customModule="Kids_Tube_TV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPs-BN-leM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="141" id="bTx-BP-zfp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9r-0o-jmc">
+                        <rect key="frame" x="8" y="151" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="T83-qJ-XeI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="F9r-0o-jmc" secondAttribute="trailing" constant="8" id="1su-QK-fLz"/>
+                <constraint firstItem="F9r-0o-jmc" firstAttribute="leading" secondItem="It0-0u-X2y" secondAttribute="leading" constant="8" id="9qv-Jg-rLu"/>
+                <constraint firstItem="WPs-BN-leM" firstAttribute="leading" secondItem="It0-0u-X2y" secondAttribute="leading" id="a6L-uM-Uvf"/>
+                <constraint firstAttribute="trailing" secondItem="WPs-BN-leM" secondAttribute="trailing" id="gby-3K-csi"/>
+                <constraint firstItem="WPs-BN-leM" firstAttribute="top" secondItem="It0-0u-X2y" secondAttribute="top" id="ifT-7j-qe0"/>
+                <constraint firstItem="F9r-0o-jmc" firstAttribute="top" secondItem="WPs-BN-leM" secondAttribute="bottom" constant="10" id="jLq-FR-ddg"/>
+            </constraints>
+            <size key="customSize" width="564" height="273"/>
+            <connections>
+                <outlet property="mainImage" destination="WPs-BN-leM" id="reS-Qt-6Dg"/>
+                <outlet property="mainText" destination="F9r-0o-jmc" id="mNW-Ld-kSe"/>
+            </connections>
+            <point key="canvasLocation" x="607" y="166"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="300" height="450"/>
+    </resources>
+</document>
